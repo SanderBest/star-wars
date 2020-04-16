@@ -16,6 +16,7 @@
 
 body {
     background: #070506 url(../img/main-bg.png) no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
@@ -23,8 +24,8 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1060px;
-    margin: auto;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 .header {
@@ -54,6 +55,7 @@ body {
     height: 5px;
     border-radius: 10px;
     background-color: #FF0000;
+    box-shadow: 2px 1px 3px #FF1493;
     position: absolute;
     top: 20px;
     left: 0;
@@ -124,6 +126,8 @@ body {
     color: #fff;
     border: none;
     position: relative;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .about__btn-play::after {
@@ -165,5 +169,204 @@ body {
 
     100% {
         transform: scale(0);
+    }
+}
+
+/* SLIDER */
+.slider-episodes {
+    margin-top: 60px;
+}
+
+.episodes__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 24px;
+}
+
+.episodes__slider {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slider__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    min-height: 200px;
+    height: auto;
+    background: linear-gradient(0deg, rgba(80, 80, 80, 0.86), rgba(80, 80, 80, 0.86));
+    box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    /* margin-right: 20px; */
+    margin-bottom: 20px;
+    padding: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.slider__item::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(80, 80, 80, 0.86);
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.slider__item:hover::before {
+    background: rgba(64, 101, 255, 0.86);
+}
+
+.slider__img {
+    object-fit: cover;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    z-index: -2;
+
+}
+
+.slider__year,
+.slider__year {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.rating__label {
+    font-size: 13px;
+    line-height: 150%;
+    margin-right: 10px;
+}
+
+.rating__star {}
+
+.star {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/star.svg) center no-repeat;
+}
+
+.star-0 {
+    background: url(../img/star-0.svg) center no-repeat;
+}
+
+.slider-prev {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: transparent url(../img/left-arrow.svg) center no-repeat;
+    border: none;
+    margin-right: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.slider-next {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: transparent url(../img/right-arrow.svg) center no-repeat;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.slider-prev span,
+.slider-next span {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .about__title {
+        width: 70%;
+    }
+
+    .about__description {
+        width: 70%;
+        background-color: #07050605;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 610px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 40px;
+
+    }
+
+    .header__logo {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 578px) {
+
+    body {
+        background: #070506 url(../img/main-bg.png) no-repeat;
+        background-size: contain;
+    }
+
+    .about__subtitle {
+        font-size: 32px;
+        line-height: 100%;
+    }
+
+    .about__title {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    .owl-nav {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 577px) {
+
+    .slider__item {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav__link {
+        margin-top: 10px;
+    }
+
+    .about__subtitle {
+        font-size: 26px;
+        line-height: 100%;
+    }
+
+    .about__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .about__description {
+        width: 100%;
+        font-size: 14px;
+        background-color: #07050605;
     }
 }
