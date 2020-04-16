@@ -391,6 +391,7 @@ body {
     .about__btn-play {
         text-align: center;
         padding: 25px 35px 25px 15px;
+        font-size: 10px;
     }
 
     .about__btn-play::after {
