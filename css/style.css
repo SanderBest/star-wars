@@ -107,9 +107,6 @@ body {
     align-items: flex-end;
 }
 
-.block-1 .about__img {
-    /* margin-right: 20px; */
-}
 
 .block-2 .about__img {
     order: 2;
