@@ -27,7 +27,7 @@ body {
     background: #070506 url(../img/main-about.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    /* background-position: top left 0px; */
+    background-position: top left 0px;
 }
 
 .trailer {
