@@ -458,7 +458,6 @@ body {
 
 @media (max-width: 768px) {
     body {
-        background-size: contain;
         background-position: top 60px left 170px;
     }
 
@@ -597,7 +596,11 @@ body {
 
 @media (max-width: 480px) {
     body {
-        background-position: top left 50px;
+        background-position: top 30px left 70px;
+    }
+
+    .header {
+        flex-direction: column;
     }
 
     .header__nav {
@@ -627,7 +630,7 @@ body {
 @media (max-width: 320px) {
 
     body {
-        background-position: top 20px left 50px;
+        background-position: top 30px left 60px;
     }
 
     .about__subtitle {
@@ -653,6 +656,15 @@ body {
 }
 
 @media (max-width: 240px) {
+
+    body {
+        background-position: top 90px left 50px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
     .about__btn-play {
         padding: 25px;
         font-size: 10px;
