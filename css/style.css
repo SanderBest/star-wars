@@ -33,7 +33,7 @@ body {
 .trailer {
     background: #070506 url(../img/main-trailer.jpg) no-repeat;
     background-attachment: fixed;
-    /* background-size: cover; */
+    background-size: cover;
 }
 
 .container {
@@ -150,8 +150,9 @@ body {
 }
 
 .about__about .about__subtitle {
-    margin-left: auto;
-    margin-right: 50px;
+    margin-right: auto;
+    /* margin-right: 50px; */
+
 }
 
 .about__subtitle {
