@@ -15,5 +15,5 @@
    - реализована карусель при помощи библиотеки Own Carusel
    - страница добавлена на GitHub
 
-Ссылка: https://sanderbest.github.io/Star-wars/
+Ссылка: https://sandervanoff.github.io/Star-wars/
 ![YRzDCgSrEdE1ObQd](https://user-images.githubusercontent.com/61217980/129863991-7bb5b4aa-97c1-4a39-989d-7f80695d280e.png)
